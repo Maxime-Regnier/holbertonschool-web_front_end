@@ -6,7 +6,7 @@
 }
 
 /* Select all classes starting with col- */
-[class*="col-"] {
+[class^="col-"] {
   float: left;
   padding: calc(var(--gutter-width) / 2);
 }
