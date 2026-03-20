@@ -515,15 +515,10 @@ a[href]:active {
 
 :root {
   --header-padding: 4rem 0 0;
-  --footer-padding: 5rem 0 1rem;
 }
 
 .header {
   padding: var(--header-padding);
-}
-
-.footer {
-  padding: var(--footer-padding);
 }
 
 ul.row {
@@ -557,7 +552,7 @@ ul.row {
   --nav-item-font-size: var(--font-size-medium);
   --nav-item-letter-spacing: 0.04rem;
   --nav-item-display: inline-block;
-  --nav-item-margin: 0 2rem 0 0;
+  --nav-item-margin: 0 0 3rem 0;
 }
 
 .navbar-menu {
@@ -582,7 +577,7 @@ ul.row {
 
 .nav .nav-link {
   display: block;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .header-container {
@@ -628,10 +623,10 @@ ul.row {
 }
 
 [data-section-theme="dark"] {
-  --button-color: var(--color-white);
   --text-color: var(--color-white);
   --section-title-color: var(--color-white);
-  background-color: #010101;
+  --button-color: var(--color-white);
+  background-color: var(--color-black);
 }
 
 .header {
@@ -640,12 +635,8 @@ ul.row {
   z-index: 3;
 }
 
-.section {
-  padding: var(--section-padding);
-}
-
 .section-hero {
-  background-color: #010101;
+  background-color: var(--color-black);
   background-position: 75% 0;
   background-repeat: no-repeat;
   background-size: 90rem auto;
