@@ -1,6 +1,6 @@
 /* Define custom properties on the root element */
 :root {
-  --color-primary: #d73953;
+--color-primary: #d73953;
   --color-black: #090909;
   --color-white: #ffffff;
   --color-light-grey: #f3f3f3;
@@ -17,30 +17,23 @@
  
 /* HTML element font sizing */
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
  
 /* Body and anchor declarations using custom properties */
 body {
-  color: var(--text-color);
   font-family: var(--font-family-base);
   font-size: var(--font-size-medium);
 }
- 
-a {
-  color: var(--text-color);
-}
- 
+
 /* Section tagline declaration using custom properties */
 .section-tagline {
-  color: var(--color-primary);
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
 }
- 
-/* Card category declaration using custom properties */
-.card-category {
-  color: var(--color-primary);
-}
- 
+
 /* Heading declarations targeting all 6 levels */
 h1,
 h2,
@@ -50,4 +43,12 @@ h5,
 h6 {
   font-family: var(--font-family-title);
 }
- 
+
+body, a {
+  color: var(--text-color);
+}
+
+/* Card category declaration using custom properties */
+.card-category, .section-tagline {
+  color: var(--color-primary);
+}
